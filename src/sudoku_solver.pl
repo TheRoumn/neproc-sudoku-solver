@@ -33,10 +33,13 @@ blocks_inner_basic([A1,B1,C1|T1], [A2,B2,C2|T2], [A3,B3,C3|T3]) :-
 % The block constraint stating that all positions in a NxN subblock must be distinct.
 blocks_constraint(N, Problem) :-
     integer(N),
-    Problem = [A, B, C, D, E, F, H, I, J],
-    blocks_inner_basic(A, B, C),
-    blocks_inner_basic(D, E, F),
-    blocks_inner_basic(H, I, J).
+    SideLength is N*N,
+    length(Rows, SideLength),
+    Problem = Rows.
+    % Problem = [A, B, C, D, E, F, H, I, J],
+    % blocks_inner_basic(A, B, C),
+    % blocks_inner_basic(D, E, F),
+    % blocks_inner_basic(H, I, J).
     
 
 solve_sudoku(Problem) :-
