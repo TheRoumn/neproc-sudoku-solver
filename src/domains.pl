@@ -1,5 +1,5 @@
 %% Module holding useful domains for the sudoku solving. Probably will not work how I intend it to.
-:- module(domains, [sudoku_domain/1, odd_domain/1]).
+:- module(domains, [sudoku_domain/1, odd_domain/1, even_domain/1, sudoku_dynamic/3]).
 
 :- use_module(library(clpfd)).
 

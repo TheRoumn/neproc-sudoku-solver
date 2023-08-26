@@ -1,5 +1,5 @@
 %% Module holding used utilities in the sudoku solver.
-:- module(utils, [ take/3, drop/3 ]).
+:- module(utils, [ take/3, drop/3, split_at/4 ]).
 
 
 % take first N
