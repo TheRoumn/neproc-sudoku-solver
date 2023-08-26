@@ -1,3 +1,4 @@
+%%% File used for testing
 
 :- use_module(problems).
 :- use_module(domains).
