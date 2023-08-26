@@ -1,1 +1,1 @@
-C:/School/LS_3/neproc_sudoku_solver/documentation/dev_documentation.md
+./documentation/dev_documentation.md
