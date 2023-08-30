@@ -21,9 +21,8 @@ map_vars_to_domain(Vars, Domain) :-
     H ins Domain,
     map_vars_to_domain(T, Domain).
 
-%% preduicate used to chunk Lists into subblock based on N.
+%% predicate used to chunk (of size N) of lines Lists into subblock based on N.
 
-% TODO: debug block constrait why it fails on 9x9 problem.
 recursive_take_n(_, []).
 recursive_take_n(N, Lists) :-
     take(N, Lists, Subblock),
@@ -36,7 +35,7 @@ recursive_take_n(N, Lists) :-
 %% Constrains the sudoku so the subblocks as all different numbers.
 block_constraint(_, L) :- 
     append(L, Flat),
-    length(Flat, 0). 
+    length(Flat, 0).
 block_constraint(N, Problem) :-
     maplist(take(N), Problem, Heads),
     recursive_take_n(N, Heads),
