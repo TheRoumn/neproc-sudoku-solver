@@ -20,6 +20,7 @@ All module are defined in corresponding `.pl` files.
      - `problem_count(-N)` - Defined problem count getter. N is the count of defined problems.
      - `problem(+N, -P)` - Standard sudoku problem getter. When N smaller or equal to the defined problem count, then a problem is returned.
      - `test_block_constraint_problem(+N, -P)` - Getter for some less filled problems for testing purposes.
+     - `empty_problem(+N, -P)` - Getter for an empty problem of size $N^2{\times}N^2$, where $N\in\mathbb{N}$. 
  - **sudoku_solver :** Module holding a NxN sudoku solver with a labeler/printer predicate
    - Exports:
      - `solve_sudoku(+P)` - Sudoku problem solver, that applies (Row, Column and Subblock) constraints to the *+P* problem variables.

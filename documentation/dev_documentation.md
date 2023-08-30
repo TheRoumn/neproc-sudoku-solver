@@ -38,6 +38,7 @@ This project is thought of as developing a simple SWI-Prolog module that helps t
        - `problem/2` - Standard sudoku problem getter.
        - `problem_count/1` - Defined problem count getter.
        - `test_block_constraint_problem/2` - Getter for some less filled problems for testing purposes.
+       - `empty_problem/2` - Getter for empty problem of size $N^2{\times}N^2$, where $N\in\mathbb{N}$.
    - **sudoku.pl :** Module holding a NxN sudoku solver with a labeler/printer predicate
      - Exports:
        - `solve_sudoku/1` - Sudoku problem solver.
@@ -59,4 +60,4 @@ The user will need to have the SWI Prolog installed.
 
 ## **3.2 Additional libraries**
 
-As far as I am concerned, I used the CLPFD library, but that come with SWI Prolog, so there should be no problem. 
+As far as I am concerned, I used the CLPFD library, but that come with SWI Prolog, so there should be no problem.
