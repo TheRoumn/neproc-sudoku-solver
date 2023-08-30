@@ -3,19 +3,16 @@
 - Author: Roman Kaňa
 - Year: 2022/2023
 - Subject: [Non-procedural Programming [NPRG005]](https://is.cuni.cz/studium/predmety/index.php?id=02934e532e6af11f37ae4446899dcfec&tid=&do=predmet&kod=NPRG005)
-- Supervisor: Mgr. Tomáš Bílý
 
 ## **1.1 Assignment**
 
 Create a Prolog program with predicates that solve sudoku problems of size $N^2{\times}N^2$, where $N\in\mathbb{N}$.
 
-## **1.2 Background**
+## **1.2 Scope**
 
-## **1.3 Scope**
+This project is thought of as developing a simple SWI-Prolog module that helps the user to solve sudoku problems of size $N^2{\times}N^2$, where $N\in\mathbb{N}$.
 
-This project is thought of as developing a simple SWI-Prolog module that helps the user to solve sudoku problems of size 
-
-## **1.4 Possible TODOs**
+## **1.3 Possible TODOs**
 
  - Domains:
    - Find a way to use them.
@@ -26,7 +23,7 @@ This project is thought of as developing a simple SWI-Prolog module that helps t
  - Sudoku_solver:
    - Find a better way of checking if a list is empty.
    - Find a way to define problem domains instead of the static 1..9.
- - Add tests for correctness and execution time into test.pl file.
+ - Add tests for correctness and execution time into test.pl file. 
 
 # **2 Description**
 

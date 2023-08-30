@@ -1,6 +1,5 @@
 %% Main module of this Project. Returns exports the solve_sudoku/1 and print_sudoku/1,2 predicates for the users.
-:- module(kanar_sudoku, [ solve_sudoku/1, print_sudoku/1, print_sudoku/2 ]).
-
+:- module(sudoku_solver, [ solve_sudoku/1, print_sudoku/1, print_sudoku/2 ]).
 
 % importing user modules
 :- use_module(utils).
@@ -23,6 +22,8 @@ map_vars_to_domain(Vars, Domain) :-
     map_vars_to_domain(T, Domain).
 
 %% preduicate used to chunk Lists into subblock based on N.
+
+% TODO: debug block constrait why it fails on 9x9 problem.
 recursive_take_n(_, []).
 recursive_take_n(N, Lists) :-
     take(N, Lists, Subblock),
