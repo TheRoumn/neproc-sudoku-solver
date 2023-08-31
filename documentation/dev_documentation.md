@@ -32,6 +32,8 @@ This project is thought of as developing a simple SWI-Prolog module that helps t
 
 The problem must be defined as a list of list and have size $N^2{\times}N^2$, where $N\in\mathbb{N}$ and all the inner lists should be the same length as the outer (main) list. All positions in the problem must be either natural number smaller than or equal to the chosen $N^2$ or a variable, in which case all the variables should be all diferent ( each variable address should be used at most once) so ther are no other constraints besides the *row*, *column* and *subblock*.
 
+For using predefined problems or defining your own problems use predicates from the [problems.pl](../src/problems.pl) file as an examples with the [problem definition](#21-the-definition-of-the-problem) above.
+
 ## **2.2 File structure**
 
  - ### 2.2 Source files '/src' 
